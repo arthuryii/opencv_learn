@@ -3,9 +3,9 @@ using namespace cv;
 int main()
 {
 	IplImage* img = cvLoadImage("lena.jpg");
-	cvNamedWindow("Example1",CV_WINDOW_AUTOSIZE );
-	cvShowImage("Example1", img );
+	cvNamedWindow("Hello OpenCV",CV_WINDOW_AUTOSIZE );
+	cvShowImage("Hello OpenCV", img );
 	cvWaitKey(0);
 	cvReleaseImage( &img );
-	cvDestroyWindow("Example1");
+	cvDestroyWindow("Hello OpenCV");
 }
